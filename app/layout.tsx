@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import { Navbar } from "@/components/navbar";
 import { ThemeProvider } from "next-themes";
 import Script from "next/script";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 
 
@@ -119,6 +120,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <Navbar />
           {children}
+           <SpeedInsights />
         </ThemeProvider>
       </body>
     </html>
